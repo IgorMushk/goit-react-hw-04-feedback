@@ -24,12 +24,12 @@ export default function App() {
     return good + neutral + bad;
   };
 
-  // const  countPositiveFeedbackPercentage = () => {
-  //   const { good } = this.state;
-  //   if (good === 0) return 0;
-  //   return  Math.round((good/this.countTotalFeedback()*100))
-  //   //return ((good / this.countTotalFeedback()) * 100).toFixed(1);
-  // };
+  const  countPositiveFeedbackPercentage = () => {
+    const { good } = this.state;
+    if (good === 0) return 0;
+    return  Math.round((good/this.countTotalFeedback()*100))
+    //return ((good / this.countTotalFeedback()) * 100).toFixed(1);
+  };
 
   return (
     <Container>
@@ -46,7 +46,7 @@ export default function App() {
                netural={neutral}
                bad={bad}
                total={countTotalFeedback()}
-              //  positivePercentage={countPositiveFeedbackPercentage()}
+               positivePercentage={countPositiveFeedbackPercentage()}
              />
            ) : (
              <Notification message="There is no feedback"></Notification>
