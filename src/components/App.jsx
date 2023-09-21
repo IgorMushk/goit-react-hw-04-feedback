@@ -12,13 +12,6 @@ export class App extends Component {
     bad: 0,
   };
 
-  // onLevelFeedback = option => {
-  //   this.setState(prevState => ({
-  //     ...prevState,
-  //     [option]: prevState[option] + 1,
-  //   }));
-  // };
-
   onLevelFeedback = option => {
     this.setState(prevState => ({ [option]: prevState[option] + 1 }));
     //console.log('setState', this.setState)
