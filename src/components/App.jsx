@@ -21,7 +21,6 @@ export default function App() {
   };
 
   const countTotalFeedback = () => {
-    //const { good, neutral, bad } = this.state;
     return good + neutral + bad;
   };
 
