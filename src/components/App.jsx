@@ -1,5 +1,5 @@
 import React from 'react'
-import { Component, useState } from 'react';
+import { useState } from 'react';
 import { Container } from './App.styled';
 import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
@@ -27,7 +27,6 @@ export default function App() {
   const  countPositiveFeedbackPercentage = () => {
     if (good === 0) return 0;
     return  Math.round((good/countTotalFeedback()*100))
-    //return ((good / this.countTotalFeedback()) * 100).toFixed(1);
   };
 
   return (
