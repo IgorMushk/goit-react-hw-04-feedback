@@ -48,7 +48,6 @@ export default function App() {
              />
            ) : (
              <Notification message="There is no feedback"></Notification>
-             // <p>There is no feedback</p>
            )}
          </Section>
        </Container>
